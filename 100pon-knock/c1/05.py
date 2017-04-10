@@ -5,7 +5,7 @@
 import sys
 import re
 
-def pick_up_words(string):
+def case5(self,wgram,corpus):
     result_list = []
     result_hash = {}
     for word  in re.split('\W+',string):
@@ -21,12 +21,9 @@ def pick_up_words(string):
 
 if __name__ == "__main__":
     '''
-    print specific char of the words  from  given string
-    this only support 1 arguments
-    original param should be "Hi He Lied Because Boron\
-    Could Not Oxidize Fluorine. New Nations Might Also\
-    Sign Peace Security Clause. Arthur King Can."
+    n-gram
     '''
-    string = sys.argv[1]
-    result_hash = pick_up_words(string)
+    wgram = sys.argv[1]
+    textdata = sys.argv[2]
+    case5(wgram,corpus)
     print(result_hash)
